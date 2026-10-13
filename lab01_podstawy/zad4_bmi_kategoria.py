@@ -10,3 +10,16 @@
 # w labie 03. Spróbuj już teraz – składnię znajdziesz na slajdach.
 
 # TODO: Twój kod poniżej
+mass = float(input("Podaj swoją masę (kg): "))
+height = float(input("Podaj swój wzrost (m): "))
+bmi = mass / (height ** 2)
+print(f"Twoje BMI wynosi {bmi:.2f}")
+
+if bmi < 18.5:
+    print("Kategoria: niedowaga")
+elif 18.5 <= bmi < 25:
+    print("Kategoria: waga prawidłowa")
+elif 25 <= bmi < 30:
+    print("Kategoria: nadwaga")
+else:
+    print("Kategoria: otyłość")
