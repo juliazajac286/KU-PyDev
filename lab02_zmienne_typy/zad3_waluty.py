@@ -11,3 +11,8 @@ EUR_RATE = 4.25   # 1 EUR = 4.25 PLN
 USD_RATE = 3.80   # 1 USD = 3.80 PLN
 
 # TODO: Twój kod poniżej
+zl = float(input("Podaj kwotę w złotych: "))
+eur = zl / EUR_RATE
+usd = zl / USD_RATE
+print(f"{zl:.2f} PLN = {eur:.2f} EUR")
+print(f"{zl:.2f} PLN = {usd:.2f} USD")
